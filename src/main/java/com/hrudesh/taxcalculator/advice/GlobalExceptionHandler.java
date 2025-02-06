@@ -17,6 +17,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(err,HttpStatus.NOT_FOUND);
     }
 
+    //error handling add
     @ExceptionHandler
     public ResponseEntity<ErrorResponse> handleGlobalException(Exception ex){
         ErrorResponse err = new ErrorResponse();
